@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+html {
+    scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.content-container{
+    min-height: calc(100vh - 85px);
+    position: relative;
+}
+
+header{
+    z-index:999;
+    width:100%;
+    height:85px;
+    position:sticky;
+    background:#000
+}
+
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 0%;
+    height: 3px;
+    background-color: #4CA4DC;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 12vh;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logo {
+    color: #e2e2e2;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #e2e2e2;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    width: 45%;
+    justify-content: space-between;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    color: #e2e2e2;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    padding-bottom: 2px;
+}
+
+.nav-links a:hover, .nav-links a:focus {
+    color: #afafaf;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    background-color: #4CA4DC;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 300ms ease-in-out;
+}
+
+.nav-links a:hover::after, .nav-links a:focus::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.burger {
+    display: none;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #e2e2e2;
+    margin: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        background-color: #131313;
+        position: relative;
+    }
+
+    .nav-links {
+        position: absolute;
+        right: 0px;
+        height: 88vh;
+        top: 12vh;
+        background-color: #131313;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translatex(100%);
+        transition: transform 500ms ease-in-out;
+        z-index: 999;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .burger {
+        display: initial;
+        cursor: pointer;
+    }
+}
+
+.nav-active {
+    transform: translatex(0%);
+}
+
+@keyframes navlinkFade {
+    from {
+        opacity: 0;
+        transform: translatex(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translatex(0);
+    }
+}
+
+#searchbar {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 25%;
+    box-sizing: border-box;
+}
+
+.home-card-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: black;
+    padding: 50px 0;
+    margin-bottom: 8vh;
+    min-height: 100vh;
+}
+
+.home-card-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+.card {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.card:not(.inactive):hover .face.front {
+  transform: perspective(600px) rotateY(180deg);
+}
+
+.card:not(.inactive):hover .face.back {
+  transform: perspective(600px) rotateY(0deg);
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg); /* Rotación en el eje X */
+    transition: transform 0.5s ease; /* Transición de rotación */
+}
+
+.card .front img{
+    position: absolute;
+}
+
+.card .front h3 {
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg); /* Rotación en el eje X */
+    transition: transform 0.5s ease; /* Transición de rotación */
+}
+
+.card .back .link {
+    height: 50px;
+    line-height: 50px;
+}
+
+.card .back .link a{
+    color:#f3f3f3;
+}
+
+.card h3 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.card p {
+    color: #ccc;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card.found{
+    transform: scale(1.4);
+    transition: transform 0.3 ease;
+    margin-top: 10%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+
+.center {
+  text-align: center;
+  background-color: #000000;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+.footer-container {
+    width: 100%;
+    height: 8dvh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: #e2e2e2;
+}
+
+div.direccio + p{
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 15px;
+}

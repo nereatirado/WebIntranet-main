@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+    <meta charset="UTF-8">
+    <title>Política de Control de Acceso</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <header>
+        <h1 class="title">Política de Control de Acceso</h1>
+        <div class="progress">
+            <span class="progress__count">0/X</span>
+            <input class="progress__reset" type="reset" value="Reset" title="Reset Checkboxes" tabindex="0">
+            <input class="progress__reset" href="politicas.html" type="reset" value="Return" title="Return to Menu" tabindex="0"
+                id="returnButton">
+            <input class="progress__reset" type="button" value="Create PDF / Print" title="Print Page" tabindex="0"
+                id="imprimirButton">
+            <span class="progress__border"></span>
+            <span class="progress__bar"></span>
+        </div>
+
+    </header>
+    <div class="container">
+        <section class="checklist">
+            <h2 class="checklist__title">Normativa</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Autenticación</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Todos los usuarios deben autenticarse de manera segura antes de acceder a sistemas y
+                                    recursos protegidos.</li>
+                                <li>El uso de autenticación multifactor (MFA) es obligatorio siempre que sea posible,
+                                    algunos ejemplos son:</li>
+                                <ul>
+                                    <li>Inicio de sesión en la cuenta de correo electrónico.</li>
+                                    <li>Inicio de sesión en tecnologías del GCT-SOC como Cisco Secure Endpoint, Cisco
+                                        Secure X, MISP, Jira Atlassian, Wazuh...</li>
+                                    <li>Inicio de sesión en la cuenta asociada con el gestor de contraseñas: Bitwarden.
+                                    </li>
+                                    <li>Inicio de sesión en la cuenta asociada con el gestor de contraseñas: Bitwarden.
+                                    </li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Aplicaciones</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <p>La autenticación multifactor (mediante TOTP) puede aplicarse mediante las siguientes
+                                aplicaciones:</p>
+                            <ul>
+                                <li>Microsoft Authenticator</li>
+                                <li>Duo Mobile</li>
+                                <li>Google Authenticator</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Autorización</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Los usuarios solo tendrán acceso a los recursos y sistemas necesarios para llevar a
+                                    cabo sus tareas
+                                    laborales.</li>
+                                <li>La autorización se otorgará de acuerdo con el principio de ”menos privilegios”, lo
+                                    que significa que
+                                    se limitarán los privilegios de acceso a lo esencial para realizar las tareas
+                                    asignadas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Gestión de Contraseñas</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Deberá aplicarse la política de gestión de contraseñas siguiendo los requisitos de complejidad, cadu-
+                                    cidad y no reutilización.</li>
+                                <li>Para más información, consultar <a href="contreseña_segura.html" target="_blank"
+                                    rel="noopener">la política de contraseñas seguras.</a></li>
+                                <li>Se fomentará el cambio de contraseña periódico y se capacitará a los usuarios sobre las buenas
+                                    prácticas de gestión de contraseñas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+
+
+            </ul>
+        </section>
+
+    </div>
+    <!-- partial -->
+    <script src="./js/scriptform.js"></script>
+
+</body>
+<footer>
+
+</footer>
+
+</html>

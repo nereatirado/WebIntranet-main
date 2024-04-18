@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+    <title>Políticas de Procedimientos-Encriptación</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <header>
+        <h1 class="title">Políticas de Procedimientos-Encriptación</h1>
+        <div class="progress">
+            <span id="progress__count" class="progress__count print-count">0/X</span>
+            <input class="progress__reset" type="reset" value="Reset" title="Reset Checkboxes" tabindex="0">
+            <input class="progress__reset" href="politicas.html" type="reset" value="Return" title="Return to Menu" tabindex="0"
+                id="returnButton">
+            <input class="progress__reset" type="button" value="Create PDF / Print" title="Print Page" tabindex="0" id="imprimirButton">
+            <span class="progress__border"></span>
+            <span class="progress__bar"></span>
+        </div>
+
+    </header>
+    <div class="container">
+        <section class="checklist">
+            <h2 class="checklist__title">Aplicación de cifrado y encriptación</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Veracrypt</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <b>En local (sistemas)</b><br>
+                                    Se empleará la aplicación de <a href="https://www.veracrypt.fr/code/VeraCrypt/"
+                                        target="_blank" rel="noopener">Veracrypt</a> para encriptar
+                                    toda la información almacenada en local de
+                                    cada integrante de GCT.
+                                    Es aplicable a documentos, máquinas virtuales o cualquier otra información
+                                    relacionada con la empresa o de naturaleza sensible.
+                                </li>
+                                <li>
+                                    <b> Discos duros - USB</b><br>
+                                    En cualquier dispositivo de almacenamiento (excepto NAS) se deberá aplicar el método
+                                    de encriptación mencionado, creando una unidad lógica que contenga la información.
+                                    Por motivos de seguridad,
+                                    es recomendable aplicar diferentes credenciales para varias unidades lógicas que se
+                                    dividirán según
+                                    su contenido
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">OpenGPG</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    El método de encriptación OpenGPG se empleará para la transferencia de archivos
+                                    entre el personal
+                                    de la empresa y en las comunicaciones resultantes de la relación con el cliente y
+                                    los servicios que
+                                    ofrece la empresa.
+                                    Es aplicable a archivos compartidos, comunicaciones vía correo electrónico y
+                                    archivos adjuntos en
+                                    los correos.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Contraseña mediante salt</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <b>Microsoft Teams</b><br>
+                                    Todos los archivos relacionados con GCT almacenados en Teams deberán estar
+                                    encriptados mediante
+                                    el protocolo de contraseña segura con su Salt correspondiente.
+                                </li>
+                                <li>
+                                    <b>NAS</b><br>
+                                    odos los archivos relacionados con GCT almacenados en la NAS (independientemente del
+                                    departamento o sección a la que pertenezca) deberán estar encriptados mediante el
+                                    protocolo de contraseña
+                                    segura con su Salt correspondiente.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+    </div>
+    <!-- partial -->
+    <script src="./js/scriptform.js"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>

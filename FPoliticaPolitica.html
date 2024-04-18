@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Políticas de Clasificación de Información por Criticidad</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <header>
+        <h1 class="title">Políticas de Clasificación de Información por Criticidad</h1>
+        <div class="progress">
+            <span class="progress__count">0/X</span>
+            <input class="progress__reset" type="reset" value="Reset" title="Reset Checkboxes" tabindex="0">
+            <input class="progress__reset" href="politicas.html" type="reset" value="Return" title="Return to Menu" tabindex="0"
+                id="returnButton">
+            <input class="progress__reset" type="button" value="Create PDF / Print" title="Print Page" tabindex="0"
+                id="imprimirButton">
+            <span class="progress__border"></span>
+            <span class="progress__bar"></span>
+        </div>
+
+    </header>
+    <div class="container">
+        <section class="checklist">
+            <h2 class="checklist__title">Criterios de clasificación</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Valor de negocio</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+
+                            <ul>
+                                <li>
+                                    A continuación, se presentan los criterios que se utilizarán para evaluar la
+                                    criticidad de la información.
+                                    Cada criterio se calificará en una escala de 1 a 5, donde 1 representa un nivel bajo
+                                    de
+                                    criticidad y 5
+                                    un nivel alto de criticidad.
+                                    <br />
+                                    <button class="modal-button" href="#myModal1">Mostrar tabla</button>
+
+                                    <div id="myModal1" class="modal">
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Evaluación de la criticidad de la información (Valor de negocio)
+                                                </h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th>Valor</th>
+                                                        <th style="text-align: left;">Descripción</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #bfffbf; color: #000;">1</td>
+                                                        <td>Información de poco valor para el negocio. Su pérdida o
+                                                            acceso no
+                                                            autorizado
+                                                            no
+                                                            afectaría
+                                                            significativamente las operaciones comerciales, la toma de
+                                                            decisiones o los
+                                                            objetivos
+                                                            estratégicos.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff9cf; color: #000;">2</td>
+                                                        <td>Información de valor limitado para el negocio. Su pérdida o
+                                                            acceso
+                                                            no
+                                                            autorizado
+                                                            tendría un
+                                                            impacto menor en las operaciones comerciales, la toma de
+                                                            decisiones
+                                                            o los
+                                                            objetivos estratégicos.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff49e; color: #000;">3</td>
+                                                        <td>Información con cierto valor para el negocio. Su pérdida o
+                                                            acceso no
+                                                            autorizado
+                                                            podría tener un
+                                                            impacto moderado en las operaciones comerciales, la toma de
+                                                            decisiones o los
+                                                            objetivos estratégicos.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ffbf80; color: #000;">4</td>
+                                                        <td>Información valiosa para el negocio. Su pérdida o acceso no
+                                                            autorizado
+                                                            tendría
+                                                            un impacto
+                                                            significativo en las operaciones comerciales, la toma de
+                                                            decisiones
+                                                            o los
+                                                            objetivos estratégicos.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ff8080; color: #000;">5</td>
+                                                        <td>Información crítica para el funcionamiento del negocio. Su
+                                                            pérdida o
+                                                            acceso
+                                                            no
+                                                            autorizado tendría
+                                                            consecuencias graves para las operaciones comerciales, la
+                                                            toma de
+                                                            decisiones
+                                                            y
+                                                            los objetivos
+                                                            estratégicos.</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Impacto financiero</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+
+                            <ul>
+                                <li>
+                                    A continuación, se presentan los criterios que se utilizarán para evaluar la
+                                    criticidad de la información.
+                                    Cada criterio se calificará en una escala de 1 a 5, donde 1 representa un nivel bajo
+                                    de
+                                    criticidad y 5
+                                    un nivel alto de criticidad.
+                                    <br />
+                                    <button class="modal-button" href="#myModal2">Mostrar tabla</button>
+
+                                    <div id="myModal2" class="modal">
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Evaluación de la criticidad de la información (Impacto financiero)
+                                                </h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th>Valor</th>
+                                                        <th style="text-align: left;">Descripción</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #bfffbf; color: #000;">1</td>
+                                                        <td>Bajo impacto financiero en caso de pérdida o acceso no
+                                                            autorizado.
+                                                            Las pérdidas
+                                                            financieras serían
+                                                            mínimas o insignificantes.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff9cf; color: #000;">2</td>
+                                                        <td>Impacto financiero limitado en caso de pérdida o acceso no
+                                                            autorizado. Las
+                                                            pérdidas financieras serían
+                                                            manejables.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff49e; color: #000;">3</td>
+                                                        <td>Impacto financiero moderado en caso de pérdida o acceso no
+                                                            autorizado. Las
+                                                            pérdidas financieras serían
+                                                            significativas pero controlables.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ffbf80; color: #000;">4</td>
+                                                        <td>Impacto financiero significativo en caso de pérdida o acceso
+                                                            no
+                                                            autorizado. Las
+                                                            pérdidas financieras serían
+                                                            considerables y podrían requerir recursos considerables para
+                                                            recuperarse.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ff8080; color: #000;">5</td>
+                                                        <td>Alto impacto financiero en caso de pérdida o acceso no
+                                                            autorizado.
+                                                            Las pérdidas
+                                                            financieras serían
+                                                            devastadoras y podrían poner en riesgo la viabilidad
+                                                            financiera de
+                                                            la empresa.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Reputación y Cumplimiento</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+
+                            <ul>
+                                <li>
+                                    A continuación, se presentan los criterios que se utilizarán para evaluar la
+                                    criticidad de la información.
+                                    Cada criterio se calificará en una escala de 1 a 5, donde 1 representa un nivel bajo
+                                    de
+                                    criticidad y 5
+                                    un nivel alto de criticidad.
+                                    <br />
+                                    <button class="modal-button" href="#myModal3">Mostrar tabla</button>
+
+                                    <div id="myModal3" class="modal">
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Evaluación de la criticidad de la información (Reputación y
+                                                    Cumplimiento)
+                                                </h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th>Valor</th>
+                                                        <th style="text-align: left;">Descripción</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #bfffbf; color: #000;">1</td>
+                                                        <td>No afecta significativamente la reputación de la empresa ni
+                                                            el
+                                                            cumplimiento de
+                                                            regulaciones. Su pérdida
+                                                            o acceso no autorizado no tendría un impacto negativo en la
+                                                            percepción pública
+                                                            ni en el cumplimiento
+                                                            legal.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff9cf; color: #000;">2</td>
+                                                        <td>Tiene un impacto limitado en la reputación de la empresa o
+                                                            el
+                                                            cumplimiento de
+                                                            regulaciones. Puede generar
+                                                            preocupaciones menores en estos aspectos.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff49e; color: #000;">3</td>
+                                                        <td>Puede afectar la reputación de la empresa o el cumplimiento
+                                                            de
+                                                            regulaciones en
+                                                            cierta medida. Se deben tomar
+                                                            medidas para abordar posibles problemas.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ffbf80; color: #000;">4</td>
+                                                        <td>Tiene un impacto significativo en la reputación de la
+                                                            empresa o el
+                                                            cumplimiento
+                                                            de regulaciones. Puede
+                                                            generar una atención negativa significativa y requerir
+                                                            acciones
+                                                            correctivas
+                                                            importantes.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ff8080; color: #000;">5</td>
+                                                        <td>Puede dañar gravemente la reputación de la empresa y/o
+                                                            resultar en
+                                                            incumplimiento legal. La pérdida o el
+                                                            acceso no autorizado tendría graves consecuencias en estos
+                                                            aspectos.
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Disponibilidad</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    A continuación, se presentan los criterios que se utilizarán para evaluar la
+                                    criticidad de la información.
+                                    Cada criterio se calificará en una escala de 1 a 5, donde 1 representa un nivel bajo
+                                    de
+                                    criticidad y 5
+                                    un nivel alto de criticidad.
+                                    <br />
+                                    <button class="modal-button" href="#myModal4">Mostrar tabla</button>
+
+                                    <div id="myModal4" class="modal">
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Evaluación de la criticidad de la información (Disponibilidad)
+                                                </h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th>Valor</th>
+                                                        <th style="text-align: left;">Descripción</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #bfffbf; color: #000;">1</td>
+                                                        <td>Puede estar fuera de servicio temporalmente sin
+                                                            consecuencias
+                                                            graves. Cortos
+                                                            períodos de inactividad no
+                                                            afectan significativamente las operaciones.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff9cf; color: #000;">2</td>
+                                                        <td>Puede estar fuera de servicio temporalmente con un impacto
+                                                            limitado
+                                                            en las
+                                                            operaciones. Se pueden tolerar
+                                                            ciertas interrupciones.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff49e; color: #000;">3</td>
+                                                        <td>Requiere disponibilidad continua, pero tolera cierta
+                                                            interrupción.
+                                                            Las
+                                                            interrupciones temporales pueden ser
+                                                            manejables.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ffbf80; color: #000;">4</td>
+                                                        <td>Requiere disponibilidad constante, y las interrupciones son
+                                                            problemáticas. Las
+                                                            interrupciones pueden afectar
+                                                            significativamente las operaciones.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ff8080; color: #000;">5</td>
+                                                        <td>Requiere disponibilidad constante y cualquier interrupción
+                                                            es
+                                                            inaceptable. Las
+                                                            interrupciones tendrían graves
+                                                            consecuencias para las operaciones.</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Confidencialidad</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+
+                            <ul>
+                                <li>
+                                    A continuación, se presentan los criterios que se utilizarán para evaluar la
+                                    criticidad de la información.
+                                    Cada criterio se calificará en una escala de 1 a 5, donde 1 representa un nivel bajo
+                                    de
+                                    criticidad y 5
+                                    un nivel alto de criticidad.
+                                    <br />
+                                    <button class="modal-button" href="#myModal5">Mostrar tabla</button>
+
+                                    <div id="myModal5" class="modal">
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Evaluación de la criticidad de la información (Confidencialidad)
+                                                </h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th>Valor</th>
+                                                        <th style="text-align: left;">Descripción</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #bfffbf; color: #000;">1</td>
+                                                        <td>Información de acceso público o que no requiere
+                                                            confidencialidad. No
+                                                            es
+                                                            necesario protegerla de manera
+                                                            especial.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff9cf; color: #000;">2</td>
+                                                        <td>Información con cierto grado de confidencialidad, pero cuyo
+                                                            acceso
+                                                            no autorizado
+                                                            tendría un impacto
+                                                            limitado o moderado.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff49e; color: #000;">3</td>
+                                                        <td>Información con un nivel razonable de confidencialidad. Su
+                                                            acceso no
+                                                            autorizado
+                                                            podría generar preocupaciones
+                                                            significativas.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ffbf80; color: #000;">4</td>
+                                                        <td>Información altamente confidencial. El acceso no autorizado
+                                                            debe ser
+                                                            rigurosamente controlado y podría tener
+                                                            graves implicaciones.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ff8080; color: #000;">5</td>
+                                                        <td>Información extremadamente confidencial que debe protegerse
+                                                            de
+                                                            manera muy
+                                                            estricta. El acceso no autorizado
+                                                            tendría consecuencias graves.</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Integridad</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+
+                            <ul>
+                                <li>
+                                    A continuación, se presentan los criterios que se utilizarán para evaluar la
+                                    criticidad de la información.
+                                    Cada criterio se calificará en una escala de 1 a 5, donde 1 representa un nivel bajo
+                                    de
+                                    criticidad y 5
+                                    un nivel alto de criticidad.
+                                    <br />
+                                    <button class="modal-button" href="#myModal6">Mostrar tabla</button>
+
+                                    <div id="myModal6" class="modal">
+
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Evaluación de la criticidad de la información (Integridad)</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th>Valor</th>
+                                                        <th style="text-align: left;">Descripción</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #bfffbf; color: #000;">1</td>
+                                                        <td>Alteraciones menores o errores en la información tienen poco
+                                                            impacto
+                                                            y son
+                                                            fácilmente corregibles.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff9cf; color: #000;">2</td>
+                                                        <td>Alteraciones o errores en la información pueden tener un
+                                                            impacto
+                                                            limitado, pero
+                                                            son manejables.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff49e; color: #000;">3</td>
+                                                        <td>Alteraciones o errores en la información pueden tener un
+                                                            impacto
+                                                            moderado y
+                                                            requerir esfuerzos para
+                                                            corregirlos.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ffbf80; color: #000;">4</td>
+                                                        <td>Cualquier alteración o error en la información podría tener
+                                                            graves
+                                                            consecuencias, y la recuperación puede ser
+                                                            desafiante.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ff8080; color: #000;">5</td>
+                                                        <td>La integridad de la información es crítica y cualquier
+                                                            alteración o
+                                                            error sería
+                                                            inaceptable y tendría graves
+                                                            consecuencias.</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="checklist">
+            <h2 class="checklist__title">Proceso de clasificación</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Identificación de Información</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    Enumera los tipos de información que manejaw, como datos de clientes, información
+                                    financiera,
+                                    propiedad intelectual, registros de empleados, etc.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Evaluación de Criterios</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Para cada tipo de información, asigna un valor del 1 al 5 a cada criterio de
+                                    clasificación en función
+                                    de su importancia para esa información específica.
+                                </li>
+                                <li>Para ello, apoyate de las tablas que se muestran
+                                    en el apartado anterior.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Puntaje Total</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Calcula el puntaje total para cada tipo de información sumando las puntuaciones
+                                    asignadas en todos
+                                    los criterios. Cuanto mayor sea el puntaje total, mayor será la criticidad de la
+                                    información.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Clasificación de información</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+
+                            <ul>
+                                <li>
+                                    Clasifica la información en categorías de acuerdo con el puntaje total.
+                                    <br />
+                                    <button class="modal-button" href="#myModal7">Mostrar tabla</button>
+
+                                    <div id="myModal7" class="modal">
+
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Clasificación de información</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table>
+                                                    <tr>
+                                                        <th>Nivel</th>
+                                                        <th style="text-align: left;">Descripción</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ff8080; color: #000;">Alto</td>
+                                                        <td>Activos de información en los cuales el calculo de su
+                                                            valoración
+                                                            total se
+                                                            encuentre
+                                                            entre el rango de 25 a 30.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff49e; color: #000;">Medio / Alto
+                                                        </td>
+                                                        <td>Activos de información en los cuales el calculo de su
+                                                            valoración
+                                                            total se
+                                                            encuentre
+                                                            entre el rango de 13 a 24.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #80ff80; color: #000;">Medio / Bajo
+                                                        </td>
+                                                        <td>Activos de información en los cuales el calculo de su
+                                                            valoración
+                                                            total se
+                                                            encuentre
+                                                            entre el rango de 6 a 12.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bajo</td>
+                                                        <td>Activos de información en los cuales el calculo de su
+                                                            valoración
+                                                            total se
+                                                            encuentre
+                                                            entre el rango de 0 a 11.</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    Se puede observar un ejemplo del resultado del proceso en el <b>Cuadro 3</b>. Se
+                                    debe
+                                    enfatizar
+                                    el hecho de que el valor total
+                                    se define respecto a un tipo de documento específico.
+                                    <br />
+                                    <button class="modal-button" href="#myModal8">Mostrar tabla</button><br />(Cuadro 3)
+
+                                    <div id="myModal8" class="modal">
+
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Ejemplo de Clasificación de Información por Criticidad</h3>
+                                            </div>
+                                            <div class="modal-body" style="overflow-x: auto;">
+                                                <table style="font-size: smaller; width: min-content;">
+                                                    <tr>
+                                                        <th>Tipo de Información</th>
+                                                        <th>Valor de Negocio</th>
+                                                        <th>Impacto Financiero</th>
+                                                        <th>Reputación</th>
+                                                        <th>Disponibilidad</th>
+                                                        <th>Confidencialidad</th>
+                                                        <th>Integridad</th>
+                                                        <th>Puntaje Total</th>
+                                                        <th>Clasificación</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Datos de Clientes</td>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>5</td>
+                                                        <td>3</td>
+                                                        <td>25</td>
+                                                        <td style="background-color: #ff8080; color: #000;"><b>Alta</b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Información Financiera</td>
+                                                        <td>5</td>
+                                                        <td>5</td>
+                                                        <td>5</td>
+                                                        <td>5</td>
+                                                        <td>5</td>
+                                                        <td>5</td>
+                                                        <td>30</td>
+                                                        <td style="background-color: #ff8080; color: #000;"><b>Alta</b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Documentación Interna</td>
+                                                        <td>3</td>
+                                                        <td>2</td>
+                                                        <td>3</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>3</td>
+                                                        <td>19</td>
+                                                        <td style="background-color: #80ff80; color: #000;"><b>Medio /
+                                                                Bajo</b>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Datos de Practicantes</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>1</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>1</td>
+                                                        <td>12</td>
+                                                        <td>Baja</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Datos de Investigación</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>4</td>
+                                                        <td>3</td>
+                                                        <td>5</td>
+                                                        <td>4</td>
+                                                        <td>24</td>
+                                                        <td style="background-color: #ff8080; color: #000;"><b>Alta</b>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+        <section class="checklist">
+            <h2 class="checklist__title">Proceso de Dimensionamiento de Seguridad y Etiquetado de Información</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Proceso de dimensionamiento de seguridad de la información</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>A partir de la definición de clases, es necesario dimensionar la información para
+                                    facilitar la compren-
+                                    sión de su valor. En este contexto, el concepto de dimensiones de seguridad de la
+                                    información
+                                    hace referencia a los diferentes aspectos o áreas que deben ser considerados y
+                                    protegidos para ga-
+                                    rantizar la seguridad de la información dentro de GCT.</li>
+                                <li>Como se muestra a continuación, estos se
+                                    definen en función del nivel de criticidad asignado previamente, en lo referente a
+                                    la confidencialidad,
+                                    integridad y disponibilidad de la información (<b>ver Cuadro 4</b>).</li>
+
+                                <li>El nivel de confidencialidad debe determinar los mecanismos de distribución, como
+                                    son
+                                    los controles de acceso y la encriptación.</li>
+                                <li>El nivel de integridad debe determinar los mecanismos de monitorización, como la
+                                    audi-
+                                    toria de acceso a los documentos y su recuperación después de un incidente.</li>
+                                <li>El nivel de disponibilidad debe determinar los mecanismos de respaldo, como son las
+                                    copias de seguridad, el mantenimiento de dispositivos y su aseguramiento.
+                                    <br />
+                                    <button class="modal-button" href="#myModal9">Mostrar tabla</button><br />(Cuadro 4)
+
+                                    <div id="myModal9" class="modal">
+
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <span class="close">&times;</span>
+                                                <h3>Dimensiones de Seguridad de Activos de Información</h3>
+                                            </div>
+                                            <div class="modal-body">
+                                                <table style="font-size: larger; width: min-content; padding-left: 1;">
+                                                    <tr>
+                                                        <td rowspan="2" style="color: #000;"><b>Nivel</b></td>
+                                                        <th colspan="3">Dimensiones de Seguridad de Activos de
+                                                            Información</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><b>Confidencialidad</b></td>
+                                                        <td><b>Integridad</b></td>
+                                                        <td><b>Disponibilidad</b></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Bajo</td>
+                                                        <td>Difusión limitada</td>
+                                                        <td>Baja</td>
+                                                        <td>No importante</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #80ff80; color: #000;">Medio / Bajo
+                                                        </td>
+                                                        <td>Confidencial</td>
+                                                        <td>Media-Baja</td>
+                                                        <td>Algo importante</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #fff49e; color: #000;">Medio / Alto
+                                                        </td>
+                                                        <td>Reservado</td>
+                                                        <td>Media-Alta</td>
+                                                        <td>Importante</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="background-color: #ff8080; color: #000;">Alto</td>
+                                                        <td>Secreto</td>
+                                                        <td>Alta</td>
+                                                        <td>Muy importante</td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Etiquetado de información</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Con el fin de facilitar la manipulación de información y cumplir las directrices de
+                                    la presente política,
+                                    se debe etiquetar la información de acuerdo con lo expuesto en el Anexo 1:
+                                    Etiquetado de
+                                    información.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+    </div>
+    <!-- partial -->
+    <script src="./js/scriptform.js"></script>
+
+</body>
+
+<footer>
+
+</footer>
+
+</html>

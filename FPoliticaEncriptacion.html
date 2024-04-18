@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+    <meta charset="UTF-8">
+    <title>Políticas de encriptación</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <header>
+        <h1 class="title">Políticas de Encriptación</h1>
+        <div class="progress">
+            <span class="progress__count">0/X</span>
+            <input class="progress__reset" type="reset" value="Reset" title="Reset Checkboxes" tabindex="0">
+            <input class="progress__reset" href="politicas.html" type="reset" value="Return" title="Return to Menu" tabindex="0"
+                id="returnButton">
+            <input class="progress__reset" type="button" value="Create PDF / Print" title="Print Page" tabindex="0"
+                id="imprimirButton">
+            <span class="progress__border"></span>
+            <span class="progress__bar"></span>
+        </div>
+
+    </header>
+    <div class="container">
+        <section class="checklist">
+            <h2 class="checklist__title">Información local</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Encriptación de Equipos</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    Todos los portátiles y ordenadores de <strong>GCT</strong> con sistemas operativos
+                                    Windows
+                                    se encriptarán
+                                    utilizando <a
+                                        href="https://learn.microsoft.com/es-es/windows/security/operating-system-security/data-protection/bitlocker/"
+                                        target="_blank" rel="noopener">Bitlocker</a> o <a
+                                        href="https://www.veracrypt.fr/code/VeraCrypt/" target="_blank"
+                                        rel="noopener">VeraCrypt</a>, mientras que en sistemas Linux se utilizará <a
+                                        href="https://www.veracrypt.fr/code/VeraCrypt/" target="_blank"
+                                        rel="noopener">VeraCrypt</a> para
+                                    asegurar que los datos almacenados en los backups estén protegidos en caso de
+                                    pérdida o robo
+                                    del medio de almacenamiento utilizado para la copia de seguridad.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Encriptación de Datos en Local</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>La encriptación de datos en local se aplicará a cualquier dispositivo de
+                                    almacenamiento local (como discos duros, unidades USB o tarjetas de memoria)
+                                    utilizados para
+                                    almacenar todo tipo de información relacionada con <strong>GCT</strong>.
+                                </li>
+                                <li>Es responsabilidad del usuario salvaguardar la integridad de los datos. Una
+                                    contraseña
+                                    perdida u olvidada se considerará una forma de violación del principio de
+                                    integridad.
+                                </li>
+                                <li>Los empleados deben crear un contenedor encriptado utilizando <a
+                                        href="https://www.veracrypt.fr/code/VeraCrypt/" target="_blank"
+                                        rel="noopener">VeraCrypt</a>
+                                    para
+                                    asegurar que los datos almacenados en estos dispositivos estén protegidos en caso de
+                                    pérdida
+                                    o robo del dispositivo.
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Encriptación de Datos en Máquinas Virtuales</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>La encriptación de datos en máquinas virtuales se aplicará a cualquier dispositivo
+                                    de almacenamiento
+                                    local (como discos duros, unidades USB o tarjetas de memoria) utilizados para
+                                    almacenar todo tipo de
+                                    información relacionada con <strong>GCT</strong>.
+                                </li>
+                                <li>Es responsabilidad del usuario salvaguardar la integridad de los datos. Una
+                                    contraseña perdida u
+                                    olvidada se considerará una forma de violación del principio de integridad.
+                                </li>
+                                <li>Los empleados deben crear un contenedor encriptado utilizando <a
+                                        href="https://www.veracrypt.fr/code/VeraCrypt/" target="_blank"
+                                        rel="noopener">VeraCrypt</a>
+                                    para asegurar que
+                                    las máquinas virtuales que contengan información valiosa en estos dispositivos estén
+                                    protegidas en
+                                    caso de pérdida o robo del dispositivo.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Encriptación de Backups</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    A todos los backups de información confidencial realizados, se les aplicará el
+                                    estándar de encriptación GPG para proteger la integridad y confidencialidad de los
+                                    datos compartidos.
+                                </li>
+                                <li>
+                                    En caso de que esto no sea posible, deberán estar encriptados mediante el protocolo
+                                    de contraseña segura explicado en el documento de <strong>metodología de
+                                        encriptación y cifrado</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+        <section class="checklist">
+            <h2 class="checklist__title">Información remota</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Separación de canales en Teams</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Cada cliente tiene un equipo de Teams</li>
+                                <li>Dentro de cada equipo hay diferentes canales:
+                                    <ul>
+                                        <li>
+                                            <strong>General:</strong> Información general sobre el cliente. Es accesible
+                                            a todos los miembros del equipo (Canal de tipo general)
+                                        </li>
+                                        <li>
+                                            <strong>IR-CLIENTE-DDMMYYYY:</strong> Información relacionada con la
+                                            respuesta a un incidente creado en la fecha de su inicio. Es accesible sólo
+                                            para los miembros que participan en el incidente (Canal de tipo privado)
+                                        </li>
+                                        <li>
+                                            <strong>DF-CLIENTE-DDMMYYYY:</strong> Información relacionada con la
+                                            investigación forense creado en la fecha de su inicio. Es accesible para
+                                            todos los miembros que participan en la investigación (Canal de tipo
+                                            privado)
+                                        </li>
+                                        <li>
+                                            <strong>Otros canales:</strong> La gestión de estos canales depende del
+                                            propietario o creador y sólo puede crearse como parte de un nuevo proyecto
+                                            (Canal de tipo privado)
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Encriptación de datos en Teams</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    Cada canal tiene asignada una <strong>contraseña segura</strong> para realizar la
+                                    encriptación. Todos los archivos del canal se encriptan usando la misma
+                                    <strong>contraseña segura</strong>. Para más información sobre el uso de contraseñas
+                                    seguras, consultar la <strong>metodología de cifrado y encriptación</strong>.
+                                </li>
+                                <li>
+                                    El acceso a la contraseña <strong>contraseñas base</strong> de cada canal, que se
+                                    usan para
+                                    la creación de una <strong>contraseña segura</strong> y, por tanto, para la
+                                    encriptación,
+                                    será mediante un comunicado al responsable de protección de datos.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Encriptación de reportes clientes</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    Para proteger los reportes y documentos enviados a clientes, se utilizará el
+                                    protocolo de encriptación <strong>GPG</strong> para asegurar la confidencialidad de
+                                    la
+                                    información. Los empleados responsables de enviar los reportes a los clientes
+                                    deberán encriptar los archivos antes de enviarlos, utilizando las claves públicas de
+                                    los destinatarios para garantizar que solo puedan ser descifrados por ellos.
+                                </li>
+                                <li>
+                                    En caso de que esto no sea posible, deberán estar encriptados mediante el protocolo
+                                    de contraseña segura explicado en el documento de <strong>metodología de
+                                        encriptación y cifrado</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Encriptación de información confidencial por mail</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    Cualquier información confidencial enviada por correo electrónico deberá ser
+                                    encriptada utilizando el estándar <strong>GPG</strong>. Los empleados deberán
+                                    asegurarse de
+                                    que los mensajes que contengan datos sensibles estén protegidos mediante el uso de
+                                    GPG y las claves públicas de los destinatarios, asegurando así que solo puedan ser
+                                    accesibles para las personas autorizadas.
+                                </li>
+                                <li>
+                                    En caso de que esto no sea posible, deberán estar encriptados mediante el protocolo
+                                    de contraseña segura explicado en el documento de <strong>metodología de
+                                        encriptación y cifrado</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Encriptación de información confidencial por otros medios</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    Cuando sea necesario compartir información confidencial a través de otros medios
+                                    (como aplicaciones de mensajería o transferencias de archivos en línea), se aplicará
+                                    el estándar de encriptación GPG para proteger la integridad y confidencialidad de
+                                    los datos compartidos.
+                                </li>
+                                <li>
+                                    En caso de que esto no sea posible, deberán estar encriptados mediante el protocolo
+                                    de contraseña segura explicado en el documento de <strong>metodología de
+                                        encriptación y cifrado</strong>.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+    </div>
+    <!-- partial -->
+    <script src="./js/scriptform.js"></script>
+
+</body>
+<footer>
+
+</footer>
+
+</html>

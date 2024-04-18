@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+    <title>Políticas de Categorización</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <header>
+        <h1 class="title">Políticas de Categorización</h1>
+        <div class="progress">
+            <span class="progress__count">0/X</span>
+            <input class="progress__reset" type="reset" value="Reset" title="Reset Checkboxes" tabindex="0">
+            <input class="progress__reset" href="politicas.html" type="reset" value="Return" title="Return to Menu" tabindex="0"
+                id="returnButton">
+            <input class="progress__reset" type="button" value="Create PDF / Print" title="Print Page" tabindex="0"
+                id="imprimirButton">
+            <span class="progress__border"></span>
+            <span class="progress__bar"></span>
+        </div>
+
+    </header>
+    <div class="container">
+        <section class="checklist">
+            <h2 class="checklist__title">Información local</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Classificación de TLPs</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><b>TLP Red (Rojo): </b>La información marcada como TLP Red es altamente sensible y
+                                    confidencial. Solo puede ser compartida con un grupo de destinatarios muy limitados
+                                    y autorizado,
+                                    generalmente dentro de la organización. La divulgación no autorizada podría tener
+                                    graves
+                                    consecuencias para la empresa.<br />
+                                    <b>Ejemplos: </b>Información contractual, datos de clientes no públicos, informes
+                                    internos,
+                                    detalles de poryectos en desarrollo.
+                                </li>
+                                <li><b>TLP Amber (Ámbar): </b>La información marcada como TLP Amber es de naturaleza
+                                    sensible
+                                    y requiere un tratamiento cuidadosa. Puede compartirse con individuos o grupos
+                                    autorizados
+                                    dentro de la organización adecuada.<br />
+                                    <b>Ejemplos: </b>Información contractual, datos de clientes no públicos, informes
+                                    internos,
+                                    detalles de proyectos en desarrollo.
+                                </li>
+                                <li><b>TLP Green (Verde): </b>La información marcada como TLP Green es de naturaleza no
+                                    sensible
+                                    y puede compartirse más ampliamente dentro de la organización. No hay restricciones
+                                    significativas en sus distribución, y su divulgación generalmente no plantea riesgos
+                                    importantes.<br />
+                                    <b>Ejemplos: </b>Información disponible en el sitio web público, documentos de
+                                    divulgación
+                                    general, materiales de marketing de acceso público.
+                                </li>
+                                <li>
+                                    <b>TLP White (Blanco): </b>La información marcada como TLP White es de acceso
+                                    público y
+                                    no tiene restricciones en su distribución. Puede compartirse abiertamente tanto
+                                    dentro como
+                                    fuera de la organización.<br />
+                                    <b>Ejemplos: </b>Información disponible en el sitio web público, documentos de
+                                    divulgación
+                                    general, materiales de marketing de acceso público.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- partial -->
+    <script src="./js/scriptform.js"></script>
+</body>
+<footer>
+
+</footer>
+
+</html>

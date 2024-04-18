@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" &amp;gt;>
+    <meta charset="UTF-8">
+    <title>Políticas de Backups</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="./css/styleform.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <header>
+        <h1 class="title">Políticas de Backups</h1>
+        <div class="progress">
+            <span class="progress__count">0/X</span>
+            <input class="progress__reset" type="reset" value="Reset" title="Reset Checkboxes" tabindex="0">
+            <input class="progress__reset" href="politicas.html" type="reset" value="Return" title="Return to Menu" tabindex="0"
+                id="returnButton">
+            <input class="progress__reset" type="button" value="Create PDF / Print" title="Print Page" tabindex="0"
+                id="imprimirButton">
+            <span class="progress__border"></span>
+            <span class="progress__bar"></span>
+        </div>
+
+    </header>
+    <div class="container">
+        <section class="checklist">
+            <h2 class="checklist__title">Disposiciones de la política</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Regla aplicable</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Por lo general, todas las copias de seguridad seguirán los principios básicos de la
+                                    regla de Backups 3-2-1:</li>
+                                <ul>
+                                    <li><strong>Tres Copias de sus Datos:</strong> Se deben realizar al menos tres
+                                        copias de datos. Esto
+                                        incluye la copia de datos en producción y dos copias de seguridad adicionales.
+                                    </li>
+                                    <li><strong>En Dos Medios Diferentes (Discos duros externos):</strong> Las copias de
+                                        datos deben
+                                        almacenarse en dos medios de almacenamiento diferentes.</li>
+                                    <li><strong>Una Copia Fuera del Sitio (Off-Site) (Cloud):</strong> Al menos una de
+                                        las copias debe
+                                        almacenarse fuera de las instalaciones físicas. Esto es esencial para proteger
+                                        los datos contra desastres naturales, incendios, robos y otros eventos que
+                                        puedan afectar su lugar de trabajo.</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Almacenamiento de backups</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Los backups se almacenarán en los siguientes medios:</li>
+                                <ul>
+                                    <li><strong>Cloud:</strong> OneDrive.</li>
+                                    <li><strong>Discos duros HDD:</strong> E1 + E2 + E3 + Eir1 + Eir2.</li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Información a realizar backup(TEAMS)</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Se realizará backup de la información de <strong>Microsoft Teams</strong> que no sea
+                                    temporal o que
+                                    no tenga asignado un período definido de retención.</li>
+                                <li>Se realizarán dos copias de seguridad incrementales de los datos necesarios en los
+                                    discos E1 y E2.</li>
+                                <li>Los backups se realizarán una vez al mes: el primer martes de cada mes en el disco
+                                    E1 y el primer viernes de cada mes en el disco E2.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Datos locales de cada dispositivo personal</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Se realizará backup de los datos almacenados en local.</li>
+                                <li>Las copias se realizarán en los discos <strong>E1</strong> y el <strong>E2</strong>
+                                    de forma mensual.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Evidencias de investigaciones de DFIR</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Se realizarán backups de las evidencias a raíz de investigaciones de IR como por
+                                    ejemplo logs,
+                                    artifacts, registros del sistema..</li>
+                                <li>Las copias de seguridad se realizarán en los discos Eir1 y Eir2. Estas copias se
+                                    harán en el momento de
+                                    la extracción de las evidencias, motivo por el cuál no se asigna una frecuencia de
+                                    tiempo determinada.</li>
+                                <li>Una vez se haya investigado el incidente, las copias deberán eliminarse de los
+                                    discos. El tiempo
+                                    específico de retención de los datos dependerá de si se inicia o no un proceso
+                                    penal.</li>
+                                <li>Para más información, consultar la <a href="retencion.html" target="_blank"
+                                        rel="noopener">Políticas
+                                        de retención</a> y <a href="eliminicacion.html" target="_blank"
+                                        rel="noopener">Politica de eliminación de datos.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Licencias, claves, certificados y otro tipo de credenciales</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>De todas las licencias, claves privadas, claves públicas, certificados y
+                                    credenciales de la BIOS deberá
+                                    realizarse una copia de seguridad en el disco E3.</li>
+                                <li>La frecuencia de tiempo asignada dependerá de si algunos de los elementos
+                                    mencionados ha sido
+                                    modificado o revocado.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </section>
+        <section class="checklist">
+            <h2 class="checklist__title">Procedimientos de Backups</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">NAS</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Se realizará backup de la información del <strong>NAS</strong> mediante dos copias
+                                    de seguridad
+                                    incremental de los
+                                    datos necesarios en los discos E1 y E2.</li>
+                                <li>Los backups se realizarán una vez al mes.</li>
+                                <li>El primera martes de cada mes en el disco E1, y el primer viernes de cada mes en el
+                                    disco E2.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Wazuh + MISP</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Se realizarán backups de los datos almacenados tanto en GCT-Wazuh como en el Wazuh
+                                    del resto
+                                    de clientes (logs y reglas de detección), así como de los datos de inteligencia que
+                                    figuren en el MISP.</li>
+                                <li>Los backups se realizarán una vez al mes. El primera martes de cada mes en el disco
+                                    E1, y el primer
+                                    viernes de cada mes en el disco E2.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Proxmox</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Se realizarán backups de forma incremental del proxmox que contiene servicios de GCT
+                                    como Bit-
+                                    warden (credenciales) en los discos E1 y E2.</li>
+                                <li>Los backups se realizarán una vez al mes. El primera
+                                    martes de cada mes en el disco E1, y el primer viernes de cada mes en el disco E2.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Clasificación de los datos</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Solo se hará Backup de aquellos datos que no sean temporales o no tengan período
+                                    asignado de
+                                    retención.</li>
+                                <li>Para más información, consultar <a href="retencion.html" target="_blank"
+                                        rel="noopener">la Política
+                                        de retención de datos.</a></li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Verificación de Backups</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Se verificará mensualmente los backups para asegurar la integridad de los datos.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Reporte</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>Se generarán reportes de forma regular sobre el estado de backups y su rendimiento
+                                    para su revisión
+                                    por parte de Administración.</li>
+                                <li>Para más información consultar el reporte de backups.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Responsabilidades</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li>El rol asignado de IT (encargado) del GCT-SOC será el responsable de la realización
+                                    y revisión de
+                                    backups.</li>
+                                <li>El rol asignado de IT (administrador) del GCT-SOC será el responsable de la
+                                    verificación de backups.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="checklist">
+            <h2 class="checklist__title">Frecuencia e Información de los Backups</h2>
+            <span class="checklist__title-border"></span>
+            <span class="checklist__percentage-border"></span>
+            <ul class="checklist-container">
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Backups de Microsoft Teams</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><strong>Datos no temporales:</strong> Se realizarán backups en los discos E1 y E2 el
+                                    primer martes y viernes de cada mes. El tipo de copia será incremental.</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Backups de datos locales</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><strong>Datos locales:</strong> Se realizarán backups en los discos E1 y E2 el
+                                    primer día laboral de cada mes. El tipo de copia será incremental.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Backups de NAS</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><strong>NAS data:</strong> Se realizarán backups en los discos E1 y E2 el primer
+                                    martes y viernes de cada mes. El tipo de copia será incremental.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Backups de Wazuh</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><strong>Wazuh (configuración y reglas de detección):</strong> Se realizarán backups
+                                    en los discos E1 y E2 el primer martes y viernes de cada mes. El tipo de copia será
+                                    incremental.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Backups de MISP</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><strong>INTEL data:</strong> Se realizarán backups en los discos E1 y E2 el primer
+                                    martes y viernes de cada mes. El tipo de copia será incremental.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Backups de Proxmox</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><strong>Contenido y servicios máquinas virtuales:</strong> Se realizarán backups en
+                                    los discos E1 y E2 el primer martes y viernes de cada mes. El tipo de copia será
+                                    incremental.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Backups DFIR</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><strong>Evidencias DFIR:</strong> Las copias se harán en el momento de la
+                                    adquisición y serán completas.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+                <li class="checklist-item">
+                    <input id="" type="checkbox" /><label for="" class="checkbox"></label><span
+                        class="checklist-item__title">Claves, licencias y certificados</span>
+                    <button class="checklist-item__expand" aria-label="Toggle Info" title="Toggle More Information">
+                        <span class="line"></span>
+                    </button>
+
+                    <div class="info-container">
+                        <div class="info">
+                            <ul>
+                                <li><strong>Claves, licencias y certificados:</strong> Se realizarán backups en el disco
+                                    E3 tras modificación/revocación. El tipo de copia será incremental.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+    </div>
+    <!-- partial -->
+    <script src="./js/scriptform.js"></script>
+
+</body>
+<footer>
+
+</footer>
+
+</html>
